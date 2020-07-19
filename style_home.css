@@ -138,7 +138,7 @@ html{
 #home .content h2{
 	font-size: 25px;
 	margin-bottom: 40px;
-	text-align: justify;
+	text-align: center;
 }
 
 #home .buttons {
@@ -240,7 +240,7 @@ section.dark .section-title::after{
 	flex-wrap: wrap;
 }
 .service-content{
-	width: calc(50% - 75px);
+	width: calc(32% - 10px);
 	text-align: center;
 	border: 2px solid #4488dd;
 	border-radius: 5px;
@@ -308,6 +308,7 @@ footer{
 	color:#2b7eb4;
 }
 
+  
 
 
 
