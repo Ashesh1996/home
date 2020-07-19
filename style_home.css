@@ -5,6 +5,22 @@
 	box-sizing: border-box;
 	text-decoration: none;
 }
+html{
+	scroll-behavior: smooth;
+	-moz-user-select: none; /* Firefox */
+	 -ms-user-select: none; /* Internet Explorer */
+  -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+ -webkit-user-select: none; /* Chrome, Safari, and Opera */
+ -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+}
+
+::-webkit-scrollbar{
+	width: 10px;
+	background-color: aliceblue;
+}
+::-webkit-scrollbar-thumb{
+	background-color: #353b48;
+}
 .navbar{
 	position: fixed;
 	background-color: transparent;
@@ -116,7 +132,7 @@
 #home .content{
 	width: 50%;
 	color: ivory;
-	/* margin-top: 10%; */
+	margin-top: 10%;
 }
 
 #home .content h2{
@@ -132,15 +148,16 @@
  
 #home .buttons a{
 	display: inline-block;
-	margin: 15px 30px;
-	color: lightskyblue;
+	margin: 15px 25px;
+	color: brown;
 	font-size: 15px;
-	font-weight: 500;
+	font-weight: 800;
 	width: 30%;
 	border: 1px solid #fff;
 	padding: 14px 0;
 	border-radius: 6px;
 	transition: .2s linear;
+	outline-style: none;
 	
 }
 #home .buttons a:hover,
@@ -148,6 +165,7 @@
 {
   background-color: #d8413c;
   color: #fff;
+  font-weight: 500;
 }
 
 section{
@@ -246,6 +264,52 @@ section.dark .section-title::after{
 	background-color: #4488dd !important;
 	transform: scale(1.1);
 }
+footer{
+	background: #353b48;
+	color: #fff;
+	padding: 80px 0;
+	text-align: center;
+}
+.copyright{
+	margin-bottom: 20px;
+	font-size: 15px;
+}
+.copyright a{
+	font-size: 16px;
+	color: #48dbfb;
+	font-weight: 500;
+}
+.goup{
+	position: fixed;
+	z-index: 500;
+	bottom: 40px;
+	right: 40px;
+	outline: none;
+	border: none;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	color: aliceblue;
+	background-color: blueviolet;
+	cursor: pointer;
+}
+
+.sm a{ 
+	margin: 0 10px;
+	font-size: 20px;
+	color: #fff;
+	transition: .2s linear;
+	
+	
+
+}
+.sm a:hover{
+	transform: scale(1.3);
+	color:#2b7eb4;
+}
+
+
+
 
 
 @media(max-width:800px){
@@ -274,7 +338,7 @@ section.dark .section-title::after{
 	#home .inner-width{
 		
 		align-items: center;
-		justify-content: flex-end;
+		justify-content: center;
 		height: 100%;
 		text-align: center;
 	}
@@ -314,11 +378,15 @@ section.dark .section-title::after{
 		width: calc(50% - 20px);
 	}
 }
-@media (max-width:600px){
+@media (max-width:500px){
 	.inner-width{
 		padding: 0 20px;
 	}
 	.service-content{
 		width: 100%;
 	}
+	#home{
+		width: 100%;
+	}
+
 }
